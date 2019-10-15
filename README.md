@@ -15,8 +15,8 @@ Estas soluciones no están pensadas para el contexto universitario donde el tama
 
 <h4>Solución:</h4>
 Una aplicación para el análisis y proyección de estadísticas, a partir de información histórica, tales como estimado de nuevos estudiantes para el siguiente semestre, estimado de demanda de cursos y estadísticas del comportamiento poblacional (Ej. retiros, incompletos) en una población estudiantil universitaria, de tal manera que los estimados y/o gráficas sean un apoyo de toma de decisiones para los administrativos de la organización, específicamente para los coordinadores.<br>
-<h4>URL video de funcionalidad:<h4>
-  
+<h4>URL video propuesta:<h4>
+https://drive.google.com/file/d/1CXjTOyOD613VijHSK9FDnUeSl7RPwIWI/view?usp=sharing
 <h4>Clientes objetivos:</h4>
 Los coordinadores de las facultades de diferentes universidades en Bogotá.
 
@@ -31,7 +31,7 @@ Los coordinadores de las facultades de diferentes universidades en Bogotá.
 
 <h4>Instrucciones de uso:</h4>
 <ol>
-  <li>Para usar la aplicación, ingrese en el siguiente link: https://pa-suarezm.github.io/coordinapp</li>
+  <li>Para usar la aplicación, ingrese en el siguiente link: http://coordinapp.herokuapp.com</li>
   <li>Para usar la aplicación, el usuario debe registrarse y posteriormente loguearse, el proceso de registro solo se debe hacer la primera vez.</li>
   <li>Una vez logueado el usuario podra acceder a los diferentes servicios por medio del menu en la parte derecha de la pantalla.</li>
 </ol> 
@@ -53,8 +53,8 @@ El código desarrollado cuenta con licencia MIT. La cual es una licencia de soft
 El proyecto se lleva a cabo usando frameworks como Meteor y react. Así mismo se utilizaron lenguajes de programacion como javaScript.
 <h4>URL video de funcionalidad:<h4>
   
-<h4>URL de la página corriendo en un servidor público (github.io):<h4>
-https://pa-suarezm.github.io/coordinapp
+<h4>URL de la página corriendo en un servidor público (HerokuAPP):<h4>
+http://coordinapp.herokuapp.com
 
 <h4>URL presentación:<h4>
 https://docs.google.com/presentation/d/1gi9KGvMnjREn6l83n_ROjvaw6KHE_OFES34yWURlFTY/edit?usp=sharing
