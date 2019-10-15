@@ -1,0 +1,431 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: #484d51;
+}
+
+html,
+body {
+  max-height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  /* position: fixed; */
+  min-width: 100%;
+  max-height: 100%;
+  /* left: 0;
+  top: 0; */
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.content-container {
+  height: 100%;
+}
+
+.nav-container {
+  width: 270px;
+}
+
+.sidenav {
+  width: 270px;
+  max-height: 100%;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#303750+0,1d2233+100 */
+  background: #303750; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #303750 0%,
+    #1d2233 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #303750 0%,
+    #1d2233 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #303750 0%,
+    #1d2233 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#303750', endColorstr='#1d2233',GradientType=0 ); /* IE6-9 */
+
+  padding: 20px 0px 0 20px;
+  text-align: center;
+}
+
+.sidenav a {
+  margin: 10px 0px 45px 0px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #9b9bba;
+  font-weight: bold;
+  display: block;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+#profilePicture {
+  border-radius: 50%;
+  height: 90px;
+  width: 90px;
+  margin-top: 25px;
+}
+
+#profileName {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 80px;
+}
+
+.nav-wrap {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+}
+
+.link-wrap {
+  padding-left: 25px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+}
+
+.link-wrap i {
+  margin: 7px 25px 0 8px;
+}
+
+.link-wrap:hover i {
+  color: white !important;
+}
+
+.link-wrap:hover a {
+  color: white !important;
+}
+
+.material-icons.violet {
+  color: #9b9bba;
+}
+
+#logoff {
+  margin-top: 90%;
+}
+
+#welcome-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  padding: 50px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 4px 0;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 3px 0 0 0;
+  color: #9b9bba;
+}
+
+h6 {
+  color: #6384ec;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 30px 0 15px 0;
+}
+
+.flex-container {
+  padding: 40px;
+  width: 70%;
+}
+
+.search-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  flex-direction: row;
+  border-bottom: 1px solid #9b9bba;
+  padding-bottom: 5px;
+  width: 80%;
+  margin: 0 0 15px 15px;
+}
+
+.material-icons.violet.search {
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+.search-bar {
+  border: none;
+  /*
+  border-radius: 30px;
+  padding: 3px 20px 3px 20px;
+  margin-bottom: 20px;
+  */
+  background-color: transparent;
+}
+
+.search-bar::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9b9bba;
+  opacity: 1; /* Firefox */
+}
+
+.search-bar:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9b9bba;
+}
+
+.search-bar::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9b9bba;
+}
+
+.wrap-background {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.whole-background {
+  height: 100vh;
+  width: 100%;
+}
+
+.course-wrap {
+  background-color: #f4f7fc;
+  padding: 0 40px;
+  max-width: 45%;
+  flex: 1 100%;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.course-detail {
+  flex: 1 100%;
+  padding-left: 20px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+*:focus {
+  outline: none;
+}
+
+.course-card {
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  margin: 10px 0;
+  padding: 12px 15px 12px 20px;
+  border-radius: 5px;
+}
+
+.course-card-selected {
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  margin: 10px 0;
+  padding: 12px 15px 12px 20px;
+  border-left: 6px solid #6384ec;
+}
+
+.course-list {
+  overflow-y: auto;
+  height: 80vh;
+}
+
+.course-detail-wrap {
+  padding: 0 30px 0 20px;
+}
+
+.wrap-all-data {
+  width: 90%;
+}
+
+.wrap-data {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.wrap-chart {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+#data-text {
+  width: 45%;
+}
+
+#data {
+  font-size: 68px;
+  margin: 10px 40px 0 60px;
+}
+
+#aproved {
+  margin-top: 30px;
+}
+
+.dashboard-background {
+  background-color: #f4f7fc;
+  padding: 0 40px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.card-deck {
+  display: flex;
+  justify-content: space-around;
+}
+
+.data-card {
+  background-color: white;
+  text-align: center;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  padding: 25px 10px;
+}
+
+#card-title {
+  font-size: 24px;
+}
+
+#card-data {
+  font-size: 68px;
+  margin: 2px 40px 0 60px;
+  font-weight: 600;
+}
+
+.line-chart {
+  margin-top: 40px;
+  padding: 20px 20px 20px 30px;
+  background-color: white;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.logo-wrap {
+  margin-top: 20%;
+  text-align: center;
+  padding: 0 15px;
+}
+
+#logo {
+  max-width: 90%;
+}
+
+#logo-title {
+  font-size: 55px;
+}
+
+#logo-description {
+  font-size: 26px;
+  color:#595959;
+}
+
+.login-wrap {
+  margin-top: 40%;
+  text-align: left;
+  padding: 0 15px;
+  text-align: center;
+  width: 80%;
+}
+
+.text-center {
+  margin-left: 10px;
+}
+
+#login-button{
+  background-color:#6384ec;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 30px;
+  margin-top: 15px;
+}
+
+.estimate-detail {
+  display:flex;
+  flex: 1 100%;
+  padding-left: 20px;
+  max-height: 100%;
+  overflow-y: auto;
+}
+
+.detail-card {
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
+  margin: 10px 0;
+  padding: 12px 15px 12px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.detail-data-wrap{
+  display:flex;
+  flex-direction: column;
+}
+
+.detail-1{
+  align-self: flex-start;
+}
+
+.detail-2{
+  align-self: center;
+}
+
+.detail-3{
+  align-self: flex-end;
+}
