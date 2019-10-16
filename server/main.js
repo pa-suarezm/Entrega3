@@ -1,5 +1,5 @@
 import { Meteor } from 'meteor/meteor';
-import { CoursesCollection }  from '../imports/api/courses.js';
+import '../imports/api/courses.js';
 
 // Meteor.courses.allow({
 
@@ -16,27 +16,6 @@ Meteor.users.allow({
        */
     }
   });
-
-CoursesCollection.allow({
-    update: function(userId, doc) {
-        return true; 
-    
-        /**
-         * Don't use `return true` in production!
-         * You probably need something like this:
-         * return Meteor.users.findOne(userId).profile.isAdmin;
-         */
-      },
-      insert: function(userId, doc) {
-        return true; 
-    
-        /**
-         * Don't use `return true` in production!
-         * You probably need something like this:
-         * return Meteor.users.findOne(userId).profile.isAdmin;
-         */
-      }
-});
 
 Accounts.onCreateUser(function(options, user) {
     // Use provided profile in options, or create an empty profile object
@@ -78,6 +57,10 @@ Meteor.startup(() => {
         return this.ready();
     }
   });
-
+  /*
+  Meteor.publish('courses', function coursesPublication() {
+    return Courses.find({owner: this.userId });
+  });
+  */
 });
 

@@ -36,9 +36,9 @@ class MainContainer extends Component {
               id="profilePicture"
             />
             <NavLink to="/Coordinator">
-            <div id="username">
+              <div id="username">
               { loggedIn ? currentUser.username : ''} 
-            </div>
+              </div>
             </NavLink>
             <div className="nav-wrap">
               <div className="upper-links">

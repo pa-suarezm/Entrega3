@@ -1,20 +1,52 @@
-import React, { Component } from "react";
+import React from "react";
+//import {} from '';
 import "../../../client/main.css";
 
-export default class Course extends Component {
-  constructor(props) {
-    super(props);
-  }
+const course = props => {
+  return (
+    <div>
+      <div className="course-card-selected">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>Algorítmica y Programación de Objetos</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+      <div className="course-card">
+        <h3>HOLA SOY EL ULTIMO</h3>
+        <h4>ISIS - 1204</h4>
+        <h5>3 créditos</h5>
+      </div>
+    </div>
+  );
+};
 
-  render(){
-
-    const course = this.props.course;
-
-    return(<div className="course-card-selected">
-            <h3>{course.name}</h3>
-            <h4>Código: {course.code}</h4>
-            <h5>Créditos: {course.credits}</h5>
-          </div>
-    );
-  }
-}
+export default course;

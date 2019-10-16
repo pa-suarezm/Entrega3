@@ -52,6 +52,7 @@ El código desarrollado cuenta con licencia MIT. La cual es una licencia de soft
 <h4>Tecnologias usadas:</h4>
 El proyecto se lleva a cabo usando frameworks como Meteor y react. Así mismo se utilizaron lenguajes de programacion como javaScript.
 <h4>URL video de funcionalidad:<h4>
+https://drive.google.com/file/d/1ydR5cXRWkUA2CtpSMK4cpPvVUwfpGI7w/view?usp=sharing
   
 <h4>URL de la página corriendo en un servidor público (HerokuAPP):<h4>
 http://coordinapp.herokuapp.com
